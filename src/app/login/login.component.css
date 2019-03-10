@@ -1,0 +1,15 @@
+.container {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.col-4 {
+  padding: 25px;
+  margin: 25px;
+  overflow: auto;
+  height: 100%;
+}
+
+.bg-light {
+  border-radius: 5px;
+}

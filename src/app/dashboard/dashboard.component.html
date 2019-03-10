@@ -1,0 +1,10 @@
+<div class="container" *ngIf="authService.checkIfLoggedIn(); else loggedOut">
+  <div class="row justify-content-center">
+    <app-users-list class="col-3 bg-light" [users]="userlist"></app-users-list>
+    <app-edit-users class="col-3 bg-light" (removeUser)='removeUser()' (addUser)='addUser($event)'></app-edit-users>
+  </div>
+</div>
+
+<ng-template #loggedOut>
+  <h1>Please log in to see this content!</h1>
+</ng-template>

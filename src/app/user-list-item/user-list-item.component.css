@@ -1,0 +1,10 @@
+.list-group-item {
+  color: red;
+  margin-bottom: 15px;
+}
+
+a {
+  color: red;
+  text-decoration: none;
+  display: block;
+}

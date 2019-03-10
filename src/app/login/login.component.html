@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div *ngIf="authService.loggedUser; else loggedOut" class="col-4 bg-light">
+      <div class="form-group">
+        <h4>You are already logged in</h4>
+      </div>
+      <button (click)="authService.logout()" type="button" class="btn btn-success">Logout</button>
+    </div>
+    <ng-template #loggedOut>
+      <form [formGroup]="form" class="col-4 bg-light">
+        <div class="form-group">
+          <label for="login">Please login</label>
+          <input type="login" id="login" formControlName="login" class="form-control" #input>
+          <small *ngIf="!form.valid" class="text-danger">
+            Must be 10 characters long and contain one number.
+          </small>
+        </div>
+        <button type="button" [disabled]="!form.valid" (click)="username = input.value; login()" class="btn btn-success">Login</button>
+      </form>
+    </ng-template>
+  </div>
+</div>

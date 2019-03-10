@@ -1,0 +1,7 @@
+<form>
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="new user.." #input>
+  </div>
+  <button (click)="addedUser(input.value); input.value=''" type="button" class="btn btn-success">Add</button>
+  <button (click)="removedUser()" type="button" class="btn btn-danger">Remove</button>
+</form>

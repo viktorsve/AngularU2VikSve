@@ -1,0 +1,4 @@
+<ul class="list-group">
+  <app-user-list-item *ngFor="let user of users" [user]="user" [textColor]="textColor"></app-user-list-item>
+</ul>
+<button (click)="switchColor = !switchColor; textColor = this.getColor()" type="button" class="btn btn-info">Toggle Colors</button>
