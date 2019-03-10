@@ -16,7 +16,7 @@ export class SingleUserComponent implements OnInit {
   constructor(private route: ActivatedRoute) { }
 
   /**
-   * Sets the user property to the current route parameter named id.
+   * Sets the user property to the current value of the route parameter named id.
    */
   ngOnInit() {
     this.route.params.subscribe(params => {
