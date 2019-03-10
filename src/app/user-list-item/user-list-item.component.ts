@@ -21,7 +21,7 @@ export class UserListItemComponent implements OnInit {
   }
 
   /**
-   * Will navigate to a seperate user page corresponding to the text of the
+   * Will navigate to a separate user page corresponding to the text of the
    * list item being clicked.
    */
   navigate($event): void {
